@@ -178,15 +178,15 @@ let propAnim = false;
 function startProposalAnim() {
   if (propAnim) return;
   propAnim = true;
-  const items = [
-    { id:'pt1', delay:400 },
-    { id:'pt2', delay:1200 },
-    { id:'pt3', delay:2100 },
-    { id:'pt4', delay:3100 },
-    { id:'propBig', delay:4200 },
-    { id:'propQ', delay:5300 },
-    { id:'yesBtns', delay:6100 },
-  ];
+const items = [
+    { id:'pt1', delay:800 },
+    { id:'pt2', delay:2500 },
+    { id:'pt3', delay:4500 },
+    { id:'pt4', delay:6500 },
+    { id:'propBig', delay:9000 },
+    { id:'propQ', delay:11500 },
+    { id:'yesBtns', delay:13500 },
+];
   items.forEach(({ id, delay }) => {
     setTimeout(() => {
       const el = document.getElementById(id);
